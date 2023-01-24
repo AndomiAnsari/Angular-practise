@@ -13,6 +13,17 @@ import { UsdInrPipe } from './currencyPipes/usd-inr.pipe';
 import { FormComponent } from './form/form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { RedElDirective } from './red-el.directive';
+import { DirectivesComponent } from './directives/directives.component';
+import { AppRoutingModule } from './app-routing.module';
+import { UserComponent } from './user/user.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { FaqsComponent } from './faqs/faqs.component';
+import { NoPageComponent } from './no-page/no-page.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { AboutCompanyComponent } from './about-company/about-company.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -27,8 +38,18 @@ import { RedElDirective } from './red-el.directive';
     FormComponent,
     ReactiveFormComponent,
     RedElDirective,
+    DirectivesComponent,
+    UserComponent,
+    HomeComponent,
+    AboutComponent,
+    ContactComponent,
+    FaqsComponent,
+    NoPageComponent,
+    AboutMeComponent,
+    AboutCompanyComponent,
+    FooterComponent
   ],
-  imports: [BrowserModule, FormsModule, ReactiveFormsModule],
+  imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
