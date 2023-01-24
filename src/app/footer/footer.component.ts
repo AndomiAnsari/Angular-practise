@@ -9,7 +9,7 @@ import { UserDataService } from '../services/user-data.service';
 export class FooterComponent {
   users :any;
 constructor(private usersData:UserDataService  ){
-console.log("🚀 ~ file: app.component.ts:13 ~ AppComponent ~ constructor ~ usersData", usersData.users())
+// console.log("🚀 ~ file: app.component.ts:13 ~ AppComponent ~ constructor ~ usersData", usersData.users())
 this.users=usersData.users()
 }
 

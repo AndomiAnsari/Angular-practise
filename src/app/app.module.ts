@@ -24,6 +24,8 @@ import { NoPageComponent } from './no-page/no-page.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { AboutCompanyComponent } from './about-company/about-company.component';
 import { FooterComponent } from './footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FetchDataFromApiComponent } from './fetch-data-from-api/fetch-data-from-api.component';
 
 @NgModule({
   declarations: [
@@ -47,9 +49,10 @@ import { FooterComponent } from './footer/footer.component';
     NoPageComponent,
     AboutMeComponent,
     AboutCompanyComponent,
-    FooterComponent
+    FooterComponent,
+    FetchDataFromApiComponent
   ],
-  imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule],
+  imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule,HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
