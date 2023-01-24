@@ -1,0 +1,13 @@
+<p>form works!</p>
+<form #loginForm="ngForm" (ngSubmit)="userLogin(loginForm.value)">
+  <input type="text" placeholder="Enter Name" ngModel name="name">
+  <br>
+  <br>
+  <input type="password" name="password" ngModel placeholder="Enter Password">
+  <br>
+  <br>
+  <button>Login</button>
+
+</form>
+
+<button (click)=userLogin(loginForm.value)>Out Side Login From Form</button>

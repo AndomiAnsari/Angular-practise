@@ -7,9 +7,12 @@ import { PassDataToChildComponent } from './pass-data-to-child/pass-data-to-chil
 import { ParentToChildComponent } from './parent-to-child/parent-to-child.component';
 import { ChildComponent } from './child/child.component';
 import { ToWayBindingComponent } from './to-way-binding/to-way-binding.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PipesComponent } from './pipes/pipes.component';
 import { UsdInrPipe } from './currencyPipes/usd-inr.pipe';
+import { FormComponent } from './form/form.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { RedElDirective } from './red-el.directive';
 
 @NgModule({
   declarations: [
@@ -21,8 +24,11 @@ import { UsdInrPipe } from './currencyPipes/usd-inr.pipe';
     ToWayBindingComponent,
     PipesComponent,
     UsdInrPipe,
+    FormComponent,
+    ReactiveFormComponent,
+    RedElDirective,
   ],
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
