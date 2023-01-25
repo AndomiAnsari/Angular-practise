@@ -26,6 +26,7 @@ import { AboutCompanyComponent } from './about-company/about-company.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FetchDataFromApiComponent } from './fetch-data-from-api/fetch-data-from-api.component';
+import { GetUserFormDataComponent } from './get-user-form-data/get-user-form-data.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { FetchDataFromApiComponent } from './fetch-data-from-api/fetch-data-from
     AboutMeComponent,
     AboutCompanyComponent,
     FooterComponent,
-    FetchDataFromApiComponent
+    FetchDataFromApiComponent,
+    GetUserFormDataComponent
   ],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule,HttpClientModule],
   providers: [],
